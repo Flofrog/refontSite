@@ -1,0 +1,99 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 juin 2016, 11:19:44
+    Author     : utilisateur
+*/
+@media screen and (max-width: 766px) {
+  .strips__strip {
+    min-height: 20vh;
+  }
+  .strips__strip:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .strips__strip:nth-child(2) {
+    top: 20vh;
+    left: 0;
+    width: 100%;
+  }
+  .strips__strip:nth-child(3) {
+    top: 40vh;
+    left: 0;
+    width: 100%;
+  }
+  .strips__strip:nth-child(4) {
+    top: 60vh;
+    left: 0;
+    width: 100%;
+  }
+  .strips__strip:nth-child(5) {
+    top: 80vh;
+    left: 0;
+    width: 100%;
+  }
+
+.text{
+    position: absolute;
+    opacity: 0;
+}
+
+.logo-menu .menu .open-menu {
+    height: 31px;
+    right: 42px;
+    top: 36px;
+    width: 35px;
+}
+
+.menu .open-menu {
+    background: url('images/menu.png') no-repeat;
+    background-size: 100% auto;
+    border: none;
+    cursor: pointer;
+    font-size: 0;
+    height: 18px;
+    position: absolute;
+    right: 20px;
+    text-indent: -9999px;
+    margin-top: 55px;
+    width: 20px;
+    z-index: 3;
+}
+
+.nav-menu {
+    font-size: 24px;
+    font-size: 1.500rem;
+    font-weight: 500;
+}
+
+.logo-menu .menu .nav-menu a {
+    margin-bottom: 15px;
+    padding: 5px 12px;
+}
+
+.hidden-bar {
+    height: 145px;
+}
+.site-name img{
+        height: 100px;
+    }
+    li{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .site-name a {
+    color: #ffffff;
+    position: absolute;
+    }
+    #btnMedia {
+        margin-top: 28px!important;
+    }
+    
+    
+}

@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15 juin 2016, 14:27:50
+    Author     : utilisateur
+*/
+
+
+/*position*/
+#wrapper{
+    width: 600px;
+    -webkit-perspective: 800;
+}
+
+#allPlan{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: Caroussel 10s infinite linear;
+}
+
+.plan{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 8em;
+    color: #000;
+    background-color: rgba (0, 0, 0, 0.8);
+}
+
+@-webkit-keyframes Caroussel{
+    from {-webkit-transform: rotateY(0); }
+    to {-webkit-transform: rotateY(360deg); }
+    
+}
+
+#allPlan > .p1{ -webkit-transform: translateZ(200px);}
+#allPlan > .p2{ -webkit-transform: rotateY(45deg) translateZ(200px);}
+#allPlan > .p3{ -webkit-transform: rotateY(90deg) translateZ(200px);}
+#allPlan > .p4{ -webkit-transform: rotateY(135deg) translateZ(200px);}
+#allPlan > .p5{ -webkit-transform: rotateY(180deg) translateZ(200px);}
+#allPlan > .p6{ -webkit-transform: rotateY(225deg) translateZ(200px);}
+#allPlan > .p7{ -webkit-transform: rotateY(270deg) translateZ(200px);}
+#allPlan > .p8{ -webkit-transform: rotateY(315deg) translateZ(200px);}
+
+/*animation*/
+

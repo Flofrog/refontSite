@@ -1,0 +1,75 @@
+
+body {
+  margin: 0;
+  background: #333;
+}
+#purecontainer { 
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/mesh-grid-background-1x.jpg);
+	position: relative;
+	padding-top: 68%;
+	background-size: cover;
+	overflow: hidden;
+  a { 
+			display: inline-block;
+			position: absolute;
+			width: 33%;
+			height: 48.4%;
+			transform: rotate(45deg);
+			top: 0; 
+			overflow: hidden;
+			opacity: 0.5;
+			transition: .6s opacity;
+			color: #fff;
+			font-family: Avenir, sans-serif;
+			text-transform: uppercase;
+			letter-spacing: .2rem;
+			font-size: .5rem;
+			text-shadow: 0 0 5px rgba(0,0,0,0.4);
+    	&:hover, .highlighted { 
+					opacity: 1;
+				}
+    img {
+					width: 100%;
+					transform: rotate(-45deg) scale(1.4);
+				}
+    span { 
+					display: inline-block;
+					transform: rotate(-45deg);
+					position: relative;
+					z-index: 5;
+					text-align: center;
+					width: 100%;
+					left: 25%;
+					top: -36%;
+					font-size: 2rem;
+				}
+    }
+}
+a#woman {
+	margin-top: 3.2%;
+	left: 34.4%;
+}
+a#man {
+	margin-top: 26.4%;
+	left: 11%;
+}
+a#child {
+	left: 57.8%;
+	margin-top: 26.5%;
+}
+@media all and (max-width: 800px) {
+  #purecontainer a span { 
+    font-size: 1.5rem;
+  }
+}
+@media all and (max-width: 600px) {
+  #purecontainer a span { 
+    font-size: 1rem;
+  }
+}
+@media all and (min-width: 1500px) {
+#purecontainer { 
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/mesh-grid-background-2x.jpg);
+  background-size: cover;
+}
+}
